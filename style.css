@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 16px;
+  text-shadow: 5px 4px 5px black;
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/Bilgewater\ \(Legends\ of\ Runeterra\).png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 20em;
+}
+
+.button {
+  text-align: justify;
+  text-align: center;
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+  font-size: 21px;
+  color: white;
+  background-color: #3D3B3B;
+  border: none;
+  text-shadow: 5px 4px 5px black;
+  cursor: pointer;
+  display: flex;
+
+}
+
+#menuSuperior ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-content: center;
+  flex-direction: row;
+}
+
+#menuSuperior li {
+  float: left;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-content: center;
+  padding: 0 32px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  flex-direction: row;
+}
+
+.barra {
+  margin-top: 30px;
+}
+
+.separador {
+  color: #fff;
+  margin-top: 30px;
+}
+
+.img {
+  width: 220px;
+}
+
+
+#menuSuperior {
+  background-color: #3D3B3B;
+  width: 100% auto;
+  height: 100% auto;
+  box-shadow: 5px 4px 5px black;
+  opacity: 90%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-content: center;
+  flex-direction: row;
+}
+
+#menuCentral ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-content: center;
+  flex-direction: row;
+}
+
+#menuCentral li {
+  padding: 12px 18px;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-content: center;
+  flex-direction: row;
+}
+
+.separador2 {
+  color: #fff;
+}
+
+#menuCentral {
+  background-color: #3D3B3B;
+  width: 100% auto;
+  height: 100% auto;
+  border-radius: 25px;
+  margin-top: 190px;
+  box-shadow: 5px 4px 5px black;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-content: center;
+  flex-direction: row;
+}
+
+.ordenar {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  background-color: #3D3B3B;
+  border-radius: 25px;
+  box-shadow: 5px 4px 5px black;
+  margin: 100px auto;
+  max-width: 30%;
+  padding: 4px 20px;
+  margin-bottom: -75px;
+  margin-top: 40px;
+}
+
+.ordenar li {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  padding: 4px 20px;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.titulo1 {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 65px;
+  text-align: center;
+  margin: 100px auto;
+  max-width: 750px;
+  height: auto;
+  color: white;
+  text-shadow: 5px 4px 5px black;
+  background-color: #3D3B3B;
+  opacity: 90%;
+  box-shadow: 5px 4px 5px black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-content: center;
+  flex-direction: row;
+
+}
+
+.selectOrden {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #fff;
+  background-color: #3D3B3B;
+  border: none;
+  text-shadow: 5px 4px 5px black;
+  cursor: pointer;
+
+}
+
+.contenedorImagenes {
+  display: flex;
+  max-width: 90%;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin: 100px auto;
+}
+
+
+.container2 {
+  position: relative;
+  max-width: 700px;
+  height: auto;
+  border: 2px solid gray;
+  margin: 100px auto;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  background-color: #3D3B3B;
+  opacity: 90%;
+}
+
+.containerVarios {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  width: 300px;
+  height: 550px;
+  border: 5px solid rgb(22, 21, 21);
+  margin: 10px 20px;
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  font-size: 14px;
+  background-color: #3D3B3B;
+  opacity: 90%;
+  margin-right: 15px;
+  margin-left: 10px;
+  border-style: dashed;
+  box-shadow: 5px 4px 5px black;
+}
+
+#fundamentos {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  text-shadow: 5px 4px 5px black;
+  background-color: #3D3B3B;
+  display: block;
+  opacity: 80%;
+  box-shadow: 5px 4px 5px black;
+  border-radius: 15px;
+  border-style: dashed;
+  margin: 100px auto;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 15px;
+}
+
+.class-divData {
+  background-color: rgb(6, 28, 37);
+  display: inline-block;
+  position: relative;
+  margin-top: 1%;
+  cursor: pointer;
+  border: 1px solid #937341;
+  margin-left: 60px;
+  border-radius: 18px;
+}
+
+.class-divData:hover {
+  transform: scale(0.96);
+  background: rgba(243, 168, 5, 0.842);
+}
+
+.class-divNosotras {
+  background-color: rgb(6, 28, 37);
+  display: inline-block;
+  position: relative;
+  margin-top: 1%;
+  cursor: pointer;
+  border: 1px solid #937341;
+  margin-left: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+}
+
+.class-divNosotras:hover {
+  transform: scale(0.96);
+  background: rgba(243, 168, 5, 0.842);
+}
+
+.class-img {
+  margin: 0;
+  width: 307px;
+  height: 200px;
+}
+
+.class-name {
+  font-size: 1.2em;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: -0.2em;
+  padding: 0.10em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 6% 8%;
+  padding-top: 2%;
+  padding-right: 8%;
+  padding-bottom: 2%;
+  padding-left: 8%;
+}
+
+.class-level {
+  font-size: 15px;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: center;
+  margin-top: -0.2em;
+  padding: 0.10em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 6% 8%;
+  padding-top: 2%;
+  padding-right: 8%;
+  padding-bottom: 2%;
+  padding-left: 8%;
+}
+
+.sobreJuegoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 16px;
+  text-shadow: 5px 4px 5px black;
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+  height: 200em;
+  background-image: url(img/fondo-ioina.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: -150px;
+}
+
+.containerSobreJuego {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 850px;
+  height: auto;
+  border: 2px solid gray;
+  margin: 100px auto;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+  background-color: #3D3B3B;
+  opacity: 90%;
+}
+
+.nuevosJugadoresDiv {
+  justify-content: center;
+  align-items: center;
+  color: rgb(245, 243, 243);
+  text-align: center;
+  font-size: 16px;
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+  background-image: url("img/fondolol-ruinas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 150em;
+  margin-top: -150px;
+}
+
+.sobreNosotrasDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 16px;
+  text-shadow: 5px 4px 5px black;
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+  height: 200em;
+  background-image: url(img/fondo-targon.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: -150px;
+}
+
+.estadisticasDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200em;
+  background-image: url(img/fondo-targon.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: -150px;
+}
