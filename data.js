@@ -394,12 +394,26 @@ function nivelDificultadTanques (champions) {
   return nivelDificultadTanquesMayoraMenor;
 }
 
-// import data from './data/lol/lol.js';
+import data from './data/lol/lol.js';
 
 // // Estadisticas de ASESINOS
 
-// const allChampion = data.data;
-// const arrObject = Object.values(allChampion);
+const allChampion = data.data;
+const arrObject = Object.values(allChampion);
+
+function estAsesinos (champions) {
+ const result= champions.reduce(function (acc , obj){
+  return [...acc, ...obj.tags]
+ }, [])
+ console.log(result);
+}
+(estAsesinos(arrObject))
+
+
+
+
+
+
 
 // function estAsesinos (champions) {
 //   return champions.reduce ((acc , obj ) => {
@@ -440,4 +454,4 @@ export { filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, fil
   nivelAtaqueMagos, nivelDefensaMagos, nivelMagiaMagos, nivelDificultadMagos, 
   nivelAtaqueTiradores, nivelDefensaTiradores, nivelMagiaTiradores, nivelDificultadTiradores,
   nivelAtaqueApoyos, nivelDefensaApoyos, nivelMagiaApoyos, nivelDificultadApoyos,
-  nivelAtaqueTanques, nivelDefensaTanques, nivelMagiaTanques, nivelDificultadTanques }
+  nivelAtaqueTanques, nivelDefensaTanques, nivelMagiaTanques, nivelDificultadTanques}
