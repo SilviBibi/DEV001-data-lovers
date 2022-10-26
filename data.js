@@ -382,6 +382,7 @@ function nivelMagiaTanques (champions) {
 
 //Ordenar TANQUES DIFICULTAD mayor a menor
 function nivelDificultadTanques (champions) {
+  
   let nivelDificultadTanquesMayoraMenor = champions.sort( (a, b) => {
     if(a.info.difficulty > b.info.difficulty) {
       return -1;
@@ -396,56 +397,25 @@ function nivelDificultadTanques (champions) {
 
 import data from './data/lol/lol.js';
 
-// // Estadisticas de ASESINOS
-
+// Estadisticas CONTEO TIPOS
 const allChampion = data.data;
 const arrObject = Object.values(allChampion);
 
-function estAsesinos (champions) {
- const result= champions.reduce(function (acc , obj){
-  return [...acc, ...obj.tags]
- }, [])
- console.log(result);
+function conteoTipos (champions) {
+ return champions.reduce(function (acc , champion){
+  const { tags } = champion;
+  tags.forEach(tag => {
+    
+    if(acc[tag]) {
+      acc[tag] += 1;
+    } else {
+      acc[tag] = 1;
+    }
+  })
+  return acc
+}, {})
 }
-(estAsesinos(arrObject))
-
-
-
-
-
-
-
-// function estAsesinos (champions) {
-//   return champions.reduce ((acc , obj ) => {
-//   // (acc[obj] ? acc[obj] += 1 : acc[obj] = 1, acc)
-//   const keys = obj.tags
-//   keys.forEach(element => {
-//     let acumulado = acc[element] ?? []
-//     console.log (acumulado)
-    
-//   });
-//   console.log(keys)
-//   }, {})
-  
-// }
-// console.log(estAsesinos(arrObject))
-
-
-// EJEMPLO ALPI 
-
-// function estAsesinos (champions) {
-//   return champions.reduce ((acc , obj ) => {
-//   const keys = obj.tags
-//   keys.forEach(element => {
-//     let acumulado = acc[element] ?? []
-//     console.log (acumulado)
-    
-//   });
-//   console.log(keys)
-//   }, {})
-  
-// }
-// console.log(estAsesinos(arrObject))
+conteoTipos(arrObject)
 
 export { filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques, 
   acomodarTodosAz, acomodarTodosZa, 
