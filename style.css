@@ -99,7 +99,7 @@ body {
 .nav-menu {
   position: fixed;
   width: 100%;
-  top: 100px;
+  top: 300px;
   margin-left: -30px;
   background: rgba(0, 0, 0, .95);
   text-align: center;
@@ -117,6 +117,7 @@ body {
     color: #fff;
     font-size: 16px;
     font-weight: 600;
+    margin-top: 120px;
     font-family: Trebuchet MS, Helvetica, sans-serif;
     background: none;
     border: none;
@@ -135,7 +136,7 @@ body {
 }
 
 #check:checked ~ .nav-menu {
-  height: 100vh;
+  height: 1500px;
 }
 
 #check:checked ~ .nav-menu li {
@@ -661,7 +662,8 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .nav-menu li {
-    font-size: 46px;
+  .nav-menu li button {
+    font-size: 30px;
   }
+
 }
