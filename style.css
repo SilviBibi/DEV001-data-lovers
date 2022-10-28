@@ -100,6 +100,7 @@ body {
   position: fixed;
   width: 100%;
   top: 100px;
+  margin-left: -30px;
   background: rgba(0, 0, 0, .95);
   text-align: center;
   transition: all .5s;
@@ -235,6 +236,8 @@ body {
   margin: 100px auto;
   max-width: 750px;
   height: auto;
+  width: auto;
+  max-width: 40%;
   border-radius: 15px;
   box-shadow: 5px 4px 5px black;
 }
@@ -657,8 +660,8 @@ body {
   margin-top: -150px;
 }
 
-@media screen and (max-width: 768px) {
-  .titulo1 {
-    color: red;
+@media screen and (min-width: 768px) {
+  .nav-menu li {
+    font-size: 46px;
   }
 }
