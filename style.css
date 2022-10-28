@@ -99,7 +99,7 @@ body {
 .nav-menu {
   position: fixed;
   width: 100%;
-  top: 300px;
+  top: 100px;
   margin-left: -30px;
   background: rgba(0, 0, 0, .95);
   text-align: center;
@@ -115,9 +115,9 @@ body {
 
 .nav-menu li button {
     color: #fff;
-    font-size: 66px;
+    font-size: 26px;
     font-weight: 600;
-    margin-top: 120px;
+    margin-top: 30px;
     font-family: Trebuchet MS, Helvetica, sans-serif;
     background: none;
     border: none;
@@ -136,7 +136,7 @@ body {
 }
 
 #check:checked ~ .nav-menu {
-  height: 1500px;
+  height: 650px;
 }
 
 #check:checked ~ .nav-menu li {
@@ -664,16 +664,16 @@ body {
 
 @media screen and (min-width: 768px) {
   .nav-menu li button {
-    font-size: 26px;
-    margin-top: 30px;
+    font-size: 66px;
+    margin-top: 120px;
 
   }
   
   .nav-menu {
-    top: 100px;
+    top: 300px;
   }
 
   #check:checked ~ .nav-menu {
-    height: 650px;
+    height: 1500px;
   }
 }
