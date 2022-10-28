@@ -314,7 +314,7 @@ body {
 .menuHamburguesa {
   width: 30px;
   height: 30px;
-  margin-right: 35px;
+  margin-right: 85px;
   cursor: pointer;
 }
 
@@ -657,6 +657,8 @@ body {
   margin-top: -150px;
 }
 
-@media screen and (min-width: 768px) {
-
+@media screen and (max-width: 768px) {
+  .titulo1 {
+    color: red;
+  }
 }
