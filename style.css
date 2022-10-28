@@ -185,7 +185,7 @@ body {
 
 #menuCentral {
   background: #3D3B3B;
-  width: 80%;
+  width: 100%;
   height: auto;
   border-radius: 20px;
   margin-top: 190px;
@@ -658,8 +658,5 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .titulo1 {
-    font-size: 50px;
-  }
-  
+
 }
